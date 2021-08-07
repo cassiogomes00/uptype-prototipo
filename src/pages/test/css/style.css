@@ -1,0 +1,18 @@
+.conteudo-secao-conteudo-area-texto {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 10px 0px;
+}
+
+.caractere-correto {
+  color: #198754;
+}
+
+.caractere-incorreto {
+  color: #dc3545;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.caractere-nulo {
+  color: #212529;
+}

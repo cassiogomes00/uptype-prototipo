@@ -1,0 +1,46 @@
+.conteudo-secao-conteudo {
+  display: grid;
+
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 30px;
+  grid-template-areas:
+    'imagem descricao descricao'
+    'imagem range radio'
+    'imagem botao botao';
+}
+
+.conteudo-secao-conteudo-imagem {
+  grid-area: imagem;
+  align-self: baseline;
+}
+.conteudo-secao-conteudo-descricao {
+  grid-area: descricao;
+}
+
+.conteudo-secao-conteudo-range {
+  grid-area: range;
+}
+
+.conteudo-secao-conteudo-radio {
+  grid-area: radio;
+}
+
+.conteudo-secao-conteudo-botao {
+  grid-area: botao;
+}
+
+@media screen and (max-width: 600px) {
+  .conteudo-secao-conteudo {
+    grid-template-areas:
+      'imagem'
+      'descricao'
+      'range'
+      'radio'
+      'botao';
+  }
+
+  .conteudo-secao-conteudo-imagem {
+    display: none;
+  }
+}

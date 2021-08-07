@@ -1,0 +1,82 @@
+.conteudo {
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    'testes'
+    'historico'
+    'ranking';
+}
+
+.testes {
+  grid-area: testes;
+}
+
+.conteudo-secao-cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conteudo-secao-conteudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conteudo-secao-conteudo-itens {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #dee2e6;
+  color: #212529;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 10px;
+
+  margin: 10px;
+}
+
+.conteudo-secao-conteudo-itens > img {
+  margin: 10px;
+}
+
+.historico {
+  grid-area: historico;
+}
+
+.conteudo-secao-conteudo-imagem {
+  max-width: 100%;
+
+  margin: 0px auto;
+}
+
+.ranking {
+  grid-area: ranking;
+}
+
+@media screen and (max-width: 600px) {
+  .conteudo-secao-conteudo {
+    flex-direction: column;
+  }
+
+  .conteudo-secao-conteudo-itens {
+    flex-direction: row;
+  }
+
+  .conteudo-secao-conteudo-itens > img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .conteudo {
+    grid-template-areas:
+      'testes testes'
+      'historico ranking';
+  }
+}
